@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/willtbot.dir/src/main.cpp.o CMakeFiles/willtbot.dir/src/simulation.cpp.o CMakeFiles/willtbot.dir/src/world.cpp.o -o willtbot  -L/usr/lib/x86_64-linux-gnu  -lSDL2 
