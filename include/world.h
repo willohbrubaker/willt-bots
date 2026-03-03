@@ -26,7 +26,7 @@ public:
     // void setCell(int x, int y, char value);
 
 private:
-    std::vector<std::vector<char>> grid_; // '.' = empty, 'C' = charging zone, etc.
+    std::vector<std::vector<char>> grid_; // '.' = empty, 'C' = charging zone
     void initializeGrid();
 };
 

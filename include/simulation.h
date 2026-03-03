@@ -20,7 +20,7 @@ private:
     SDL_Window *window_ = nullptr;
     SDL_Renderer *renderer_ = nullptr;
 
-    int cellSize_; // Pixels per grid cell
+    int cellSize_;
     bool running_ = true;
 
     void handleEvents();

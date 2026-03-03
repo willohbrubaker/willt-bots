@@ -45,22 +45,19 @@ bool Simulation::init()
 
 void Simulation::run()
 {
-    if (!init())
-        return;
-
-    Uint32 lastTime = SDL_GetTicks();
+    Uint32 lastUpdate = SDL_GetTicks();
     while (running_)
     {
         handleEvents();
 
-        Uint32 currentTime = SDL_GetTicks();
-        if (currentTime - lastTime >= 100)
-        { // ~10 FPS for now – low CPU
+        Uint32 now = SDL_GetTicks();
+        if (now - lastUpdate >= 100)
+        {
             render();
-            lastTime = currentTime;
+            lastUpdate = now;
         }
 
-        SDL_Delay(10); // Prevent 100% CPU
+        SDL_Delay(5);
     }
 }
 
@@ -79,7 +76,7 @@ void Simulation::handleEvents()
 
 void Simulation::render()
 {
-    SDL_SetRenderDrawColor(renderer_, 20, 20, 30, 255); // Dark background
+    SDL_SetRenderDrawColor(renderer_, 20, 20, 30, 255); // Dark bg
     SDL_RenderClear(renderer_);
 
     int w = world_->getWidth();
@@ -89,13 +86,13 @@ void Simulation::render()
     {
         for (int x = 0; x < w; ++x)
         {
-            char cell = world_->getCell(x, y); // We'll add this getter
+            char cell = world_->getCell(x, y);
 
-            SDL_Rect rect = {x * cellSize_, y * cellSize_, cellSize_, cellSize_};
+            SDL_Rect rect{x * cellSize_, y * cellSize_, cellSize_, cellSize_};
 
             if (cell == 'C')
             {
-                SDL_SetRenderDrawColor(renderer_, 0, 220, 100, 255); // Bright green charging
+                SDL_SetRenderDrawColor(renderer_, 0, 220, 100, 255); // Green charging
             }
             else
             {
@@ -104,7 +101,7 @@ void Simulation::render()
 
             SDL_RenderFillRect(renderer_, &rect);
 
-            // Optional border for grid look
+            // Light grid lines (optional but looks pro)
             SDL_SetRenderDrawColor(renderer_, 30, 30, 40, 255);
             SDL_RenderDrawRect(renderer_, &rect);
         }

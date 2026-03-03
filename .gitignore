@@ -1,1 +1,28 @@
-build/
+# Build artifacts
+/build/
+/build-*/
+*.o
+*.out
+*.a
+*.so
+
+# Common languages / tools
+# Python
+__pycache__/
+*.py[cod]
+env/
+venv/
+.env
+
+# Node
+node_modules/
+dist/
+
+# IDEs / editors
+.vscode/
+.idea/
+
+# Logs and OS files
+*.log
+.DS_Store
+Thumbs.db
