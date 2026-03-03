@@ -11,7 +11,7 @@ int main([[maybe_unused]] int argc, [[maybe_unused]] char *argv[])
         return 1;
     }
 
-    std::cout << "WilltBot simulation window should now be open. Close it to exit.\n";
+    std::cout << "WilltBot simulation running...\n";
     sim.run();
 
     return 0;

@@ -129,6 +129,30 @@ willtbot/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/willtbot.dir/build.make CMakeFiles/willtbot.dir/build
 .PHONY : willtbot/fast
 
+src/bot.o: src/bot.cpp.o
+.PHONY : src/bot.o
+
+# target to build an object file
+src/bot.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/willtbot.dir/build.make CMakeFiles/willtbot.dir/src/bot.cpp.o
+.PHONY : src/bot.cpp.o
+
+src/bot.i: src/bot.cpp.i
+.PHONY : src/bot.i
+
+# target to preprocess a source file
+src/bot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/willtbot.dir/build.make CMakeFiles/willtbot.dir/src/bot.cpp.i
+.PHONY : src/bot.cpp.i
+
+src/bot.s: src/bot.cpp.s
+.PHONY : src/bot.s
+
+# target to generate assembly for a file
+src/bot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/willtbot.dir/build.make CMakeFiles/willtbot.dir/src/bot.cpp.s
+.PHONY : src/bot.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -210,6 +234,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... willtbot"
+	@echo "... src/bot.o"
+	@echo "... src/bot.i"
+	@echo "... src/bot.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/willtbot.dir/src/bot.cpp.o"
+  "CMakeFiles/willtbot.dir/src/bot.cpp.o.d"
   "CMakeFiles/willtbot.dir/src/main.cpp.o"
   "CMakeFiles/willtbot.dir/src/main.cpp.o.d"
   "CMakeFiles/willtbot.dir/src/simulation.cpp.o"

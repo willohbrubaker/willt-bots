@@ -69,10 +69,24 @@ include CMakeFiles/willtbot.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/willtbot.dir/flags.make
 
+CMakeFiles/willtbot.dir/src/bot.cpp.o: CMakeFiles/willtbot.dir/flags.make
+CMakeFiles/willtbot.dir/src/bot.cpp.o: /home/prestop/Desktop/willt-bots/src/bot.cpp
+CMakeFiles/willtbot.dir/src/bot.cpp.o: CMakeFiles/willtbot.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prestop/Desktop/willt-bots/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/willtbot.dir/src/bot.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/willtbot.dir/src/bot.cpp.o -MF CMakeFiles/willtbot.dir/src/bot.cpp.o.d -o CMakeFiles/willtbot.dir/src/bot.cpp.o -c /home/prestop/Desktop/willt-bots/src/bot.cpp
+
+CMakeFiles/willtbot.dir/src/bot.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/willtbot.dir/src/bot.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/prestop/Desktop/willt-bots/src/bot.cpp > CMakeFiles/willtbot.dir/src/bot.cpp.i
+
+CMakeFiles/willtbot.dir/src/bot.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/willtbot.dir/src/bot.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/prestop/Desktop/willt-bots/src/bot.cpp -o CMakeFiles/willtbot.dir/src/bot.cpp.s
+
 CMakeFiles/willtbot.dir/src/main.cpp.o: CMakeFiles/willtbot.dir/flags.make
 CMakeFiles/willtbot.dir/src/main.cpp.o: /home/prestop/Desktop/willt-bots/src/main.cpp
 CMakeFiles/willtbot.dir/src/main.cpp.o: CMakeFiles/willtbot.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prestop/Desktop/willt-bots/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/willtbot.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prestop/Desktop/willt-bots/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/willtbot.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/willtbot.dir/src/main.cpp.o -MF CMakeFiles/willtbot.dir/src/main.cpp.o.d -o CMakeFiles/willtbot.dir/src/main.cpp.o -c /home/prestop/Desktop/willt-bots/src/main.cpp
 
 CMakeFiles/willtbot.dir/src/main.cpp.i: cmake_force
@@ -86,7 +100,7 @@ CMakeFiles/willtbot.dir/src/main.cpp.s: cmake_force
 CMakeFiles/willtbot.dir/src/simulation.cpp.o: CMakeFiles/willtbot.dir/flags.make
 CMakeFiles/willtbot.dir/src/simulation.cpp.o: /home/prestop/Desktop/willt-bots/src/simulation.cpp
 CMakeFiles/willtbot.dir/src/simulation.cpp.o: CMakeFiles/willtbot.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prestop/Desktop/willt-bots/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/willtbot.dir/src/simulation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prestop/Desktop/willt-bots/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/willtbot.dir/src/simulation.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/willtbot.dir/src/simulation.cpp.o -MF CMakeFiles/willtbot.dir/src/simulation.cpp.o.d -o CMakeFiles/willtbot.dir/src/simulation.cpp.o -c /home/prestop/Desktop/willt-bots/src/simulation.cpp
 
 CMakeFiles/willtbot.dir/src/simulation.cpp.i: cmake_force
@@ -100,7 +114,7 @@ CMakeFiles/willtbot.dir/src/simulation.cpp.s: cmake_force
 CMakeFiles/willtbot.dir/src/world.cpp.o: CMakeFiles/willtbot.dir/flags.make
 CMakeFiles/willtbot.dir/src/world.cpp.o: /home/prestop/Desktop/willt-bots/src/world.cpp
 CMakeFiles/willtbot.dir/src/world.cpp.o: CMakeFiles/willtbot.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prestop/Desktop/willt-bots/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/willtbot.dir/src/world.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prestop/Desktop/willt-bots/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/willtbot.dir/src/world.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/willtbot.dir/src/world.cpp.o -MF CMakeFiles/willtbot.dir/src/world.cpp.o.d -o CMakeFiles/willtbot.dir/src/world.cpp.o -c /home/prestop/Desktop/willt-bots/src/world.cpp
 
 CMakeFiles/willtbot.dir/src/world.cpp.i: cmake_force
@@ -113,6 +127,7 @@ CMakeFiles/willtbot.dir/src/world.cpp.s: cmake_force
 
 # Object files for target willtbot
 willtbot_OBJECTS = \
+"CMakeFiles/willtbot.dir/src/bot.cpp.o" \
 "CMakeFiles/willtbot.dir/src/main.cpp.o" \
 "CMakeFiles/willtbot.dir/src/simulation.cpp.o" \
 "CMakeFiles/willtbot.dir/src/world.cpp.o"
@@ -120,12 +135,13 @@ willtbot_OBJECTS = \
 # External object files for target willtbot
 willtbot_EXTERNAL_OBJECTS =
 
+willtbot: CMakeFiles/willtbot.dir/src/bot.cpp.o
 willtbot: CMakeFiles/willtbot.dir/src/main.cpp.o
 willtbot: CMakeFiles/willtbot.dir/src/simulation.cpp.o
 willtbot: CMakeFiles/willtbot.dir/src/world.cpp.o
 willtbot: CMakeFiles/willtbot.dir/build.make
 willtbot: CMakeFiles/willtbot.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/prestop/Desktop/willt-bots/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable willtbot"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/prestop/Desktop/willt-bots/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable willtbot"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/willtbot.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
